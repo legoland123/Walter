@@ -233,18 +233,26 @@
 							<div style = "display: flex;">
 								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/SAP Analytics Cloud.png" target="_blank" class="image fit">
 									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/SAP Analytics Cloud.png" alt="" /></a>
-								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/SAP SD Sales and Distribution.png" class="image fit" target="_blank">
-									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/SAP SD Sales and Distribution.png" alt="" /></a>
-								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/SAP MM Materials Management.png" class="image fit" target="_blank">
-									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/SAP MM Materials Management.png" alt="" /></a>
+								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/PowerBi Tricks.png" class="image fit" target="_blank">
+									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/PowerBi Tricks.png" alt="" /></a>
+								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/Creating Interactive Tableau Dashboards.png" target="_blank" class="image fit">
+									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/Creating Interactive Tableau Dashboards.png" alt="" /></a>
+								
+							</div>
+							<div style = "display: flex;">
+								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/Predictive Analytics Essential Training Data Mining.png" class="image fit" target="_blank">
+									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/Predictive Analytics Essential Training Data Mining.png" alt="" /></a>
+								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/Power BI Data Modeling with DAX_Walter.png" class="image fit" target="_blank">
+									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/Power BI Data Modeling with DAX_Walter.png" alt="" /></a>
+								
 							</div>
 							<div style = "display: flex;">
 								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/LucidChart.png" target="_blank" class="image fit">
 									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/LucidChart.png" alt="" /></a>
-								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/Power BI Data Modeling with DAX_Walter.png" class="image fit" target="_blank">
-									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/Power BI Data Modeling with DAX_Walter.png" alt="" /></a>
-								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/PowerBi Tricks.png" class="image fit" target="_blank">
-									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/PowerBi Tricks.png" alt="" /></a>
+								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/SAP SD Sales and Distribution.png" class="image fit" target="_blank">
+									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/SAP SD Sales and Distribution.png" alt="" /></a>
+								<a href="images/Certificates/Ngee Ann Poly/LinkedIn/SAP MM Materials Management.png" class="image fit" target="_blank">
+									<img src="images/Certificates/Ngee Ann Poly/LinkedIn/SAP MM Materials Management.png" alt="" /></a>
 							</div>
 							<h2>Secondary School</h2>
 							<div style = "display: flex;">
@@ -308,6 +316,82 @@
 									<div class="dates">Janurary 2010 - October 2016</div>
 								</div>
 							</section>
+						</section>
+
+						<!-- Volunteer Experience -->
+						<section id="education" class="main special">
+							<header class="major">
+								<h2>Volunteering</h2>
+							</header>
+							
+							<!-- Slideshow container -->
+							<div class="slideshow-container">
+								<header class="main">
+									<h2>Food Rescue #2 2023</h2>
+								</header>
+								<!-- Full-width images with number and caption text -->
+								<div class="mySlides fade">
+								<div class="numbertext">1 / 3</div>
+								<img src="images/Food Rescue_2/SmallGrp.jpg" style="width:100%">
+								<div class="text">Block Group</div>
+								</div>
+							
+								<div class="mySlides fade">
+								<div class="numbertext">2 / 3</div>
+								<img src="images/Food Rescue_2/MainGrp.jpg" style="width:100%">
+
+								<div class="text">AM Shift</div>
+								</div>
+							
+								<div class="mySlides fade">
+								<div class="numbertext">3 / 3</div>
+								<img src="images/Food Rescue_2/IndividualPic.jpg" style="width:100%">
+
+								<div class="text">Packing Group</div>
+								</div>
+							
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<br>
+							
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+							</div>
+							<script>
+								let slideIndex = 1;
+								showSlides(slideIndex);
+
+								// Next/previous controls
+								function plusSlides(n) {
+								showSlides(slideIndex += n);
+								}
+
+								// Thumbnail image controls
+								function currentSlide(n) {
+								showSlides(slideIndex = n);
+								}
+
+								function showSlides(n) {
+								let i;
+								let slides = document.getElementsByClassName("mySlides");
+								let dots = document.getElementsByClassName("dot");
+								if (n > slides.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block";
+								dots[slideIndex-1].className += " active";
+								}
+							</script>
 						</section>
 						
 					</div>
